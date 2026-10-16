@@ -2,23 +2,23 @@
    ditulis ulang tanpa Bootstrap/jQuery supaya ringan di HP lama. Merah hanya untuk SOS/darurat. */
 :root {
   --ink: #1f1f1f;
-  --muted: #5f5a55;
-  --line: #ece5dd;
-  --soft: #fbf6f1;
+  --muted: #6b6b6b;
+  --line: #e1e5ee;
+  --soft: #f4f6fa;
   --bg: #ffffff;
   --card: #ffffff;
-  /* warna merek (Panduan Desain UI v1.10): oranye + putih; merah hanya darurat */
-  --brand: #f28c28;        /* oranye utama: tombol utama, aksen, pita */
-  --on-brand: #1f1f1f;     /* teks di atas oranye (putih kontrasnya terlalu rendah) */
-  --accent: #b45309;       /* teks/tautan oranye di atas putih */
-  --accent-2: #f28c28;
-  --brand-soft: #fff1e3;   /* latar lembut oranye */
+  /* warna dasar aplikasi (rumah baru, 9–10 Okt): biru tua #14213D + putih; merah hanya darurat */
+  --brand: #14213d;        /* biru tua utama: tombol utama, aksen, pita (= Warna.Utama aplikasi) */
+  --on-brand: #ffffff;     /* teks di atas biru tua */
+  --accent: #14213d;       /* teks/tautan aksen = warna judul */
+  --accent-2: #14213d;
+  --brand-soft: #f4f6fa;   /* latar lembut = abu kartu aplikasi */
   --red: #d92d20;
   --red-soft: #fdecea;
-  --hero-a: #fff1e3;
+  --hero-a: #f4f6fa;
   --hero-b: #ffffff;
   --hero-fg: #1f1f1f;
-  --hero-muted: #5f5a55;
+  --hero-muted: #6b6b6b;
   --hero-line: rgba(31, 31, 31, .18);
   --nav-bg: rgba(255, 255, 255, .94);
   --max: 1120px;
@@ -26,23 +26,25 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #f2efec;
-    --muted: #b5aea7;
-    --line: #34302c;
-    --soft: #1b1815;
-    --bg: #12100e;
-    --card: #1a1714;
-    --accent: #ffad5c;
-    --accent-2: #f28c28;
-    --brand-soft: #2a1d10;
+    --ink: #e6e9ef;
+    --muted: #9aa4b5;
+    --line: #2e3747;
+    --soft: #1b2230;
+    --bg: #0f131b;
+    --brand: #2f5bd3;
+    --on-brand: #ffffff;
+    --card: #1b2230;
+    --accent: #f5f7fa;
+    --accent-2: #2f5bd3;
+    --brand-soft: #1b2230;
     --red: #f0544a;
     --red-soft: #3a1d1a;
-    --hero-a: #2a1a0b;
-    --hero-b: #12100e;
-    --hero-fg: #f7f3ef;
-    --hero-muted: #cbbfb3;
+    --hero-a: #1b2230;
+    --hero-b: #0f131b;
+    --hero-fg: #f5f7fa;
+    --hero-muted: #9aa4b5;
     --hero-line: rgba(255, 255, 255, .25);
-    --nav-bg: rgba(18, 16, 14, .94);
+    --nav-bg: rgba(15, 19, 27, .94);
     --shadow: 0 6px 24px rgba(0, 0, 0, .35);
   }
 }
@@ -84,7 +86,7 @@ p { margin: 0 0 12px; color: var(--muted); }
 .btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .btn { display: inline-block; text-decoration: none; font-weight: 700; font-size: 15.5px; padding: 13px 24px; border-radius: 10px; transition: transform .2s ease, box-shadow .2s ease; }
 .btn:hover { transform: translateY(-2px); }
-.btn.light { background: var(--brand); color: var(--on-brand); box-shadow: 0 10px 26px rgba(242, 140, 40, .35); }
+.btn.light { background: var(--brand); color: var(--on-brand); box-shadow: 0 10px 26px rgba(20, 33, 61, .30); }
 .btn.ghost { border: 1.5px solid var(--hero-fg); color: var(--hero-fg); }
 .hero-phone { margin: 52px auto 0; height: 330px; overflow: hidden; }
 @media (max-width: 640px) { .hero { padding-top: 48px; } .hero-phone { height: 290px; } }
@@ -167,8 +169,8 @@ p { margin: 0 0 12px; color: var(--muted); }
 /* pita ajakan */
 .cta { background: var(--brand); color: var(--on-brand); text-align: center; }
 .cta h2 { color: var(--on-brand); }
-.cta p { color: #3a2a1c; max-width: 680px; margin: 0 auto 26px; }
-.cta .btn.light { background: #1f1f1f; color: #fff; box-shadow: 0 10px 26px rgba(0, 0, 0, .25); }
+.cta p { color: #dfe4ee; max-width: 680px; margin: 0 auto 26px; }
+.cta .btn.light { background: #ffffff; color: #14213d; box-shadow: 0 10px 26px rgba(0, 0, 0, .25); }
 .note { max-width: 820px; margin: 26px auto 0; text-align: center; font-size: 14.5px; color: var(--muted); }
 
 /* footer */
